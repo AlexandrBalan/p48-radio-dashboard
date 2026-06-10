@@ -1,0 +1,35 @@
+body {
+    margin:0;
+    padding: 0px;
+    background-color: #4a4e69;
+    color: #f2e9e4;
+    text-align: center;}
+
+
+h1 {
+    background-color: #22223b;
+    color: #c9ada7;
+    padding: 50px;
+    font-size: 50px;
+    margin: 0px;
+}
+
+h2{
+    font-size: 45px;
+    color: white;
+    
+}
+
+a{
+    display: block;
+    margin: 15px auto;
+    font-size: 35px;
+    border-radius: 30px;
+    width: 25%;
+    color: #f2e9e4;
+}
+
+a:hover{
+    background-color: rgb(44, 62, 80);
+
+}

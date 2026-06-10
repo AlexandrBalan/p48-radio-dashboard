@@ -1,0 +1,209 @@
+/*
+Utica team sprint1
+Developers: Alexandr, Antonio, Necobi, David
+sprint1.css
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 15px 25px;
+    border-bottom: 3px solid black;
+    background: #f7f7f7;
+}
+.header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #5a13b1;
+    text-shadow: 8px 8px #43d1bf;
+}
+.nav {
+    position: absolute;
+    right: 25px;
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 20px;
+}
+.nav a:hover {
+    background: #f64fd6;
+    color: white;
+    transition: 0.3s;
+}
+.hero {
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 1px solid #ccc;
+    background: linear-gradient(135deg, #2e77f9, #5a13b1);
+    color: white;
+}
+.main-section {
+    display: grid;
+    grid-template-columns: 220px 1fr 220px;
+    flex: 1;
+}
+.left-panel {
+    padding: 20px;
+    margin: 20px;
+    background: #f64fd6;
+    border-radius: 20px;
+    border-right: 10px solid #43d1bf;
+    border-bottom: 10px solid #43d1bf;
+    color: #efefef;
+    font-size: 20px;
+    font-weight: bold;
+}
+.left-panel label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.left-panel select,
+.left-panel button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.left-panel button {
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+.right-panel {
+    padding: 25px;
+    margin: 25px;
+    border-radius: 20px;
+    background: #2e77f9;
+    border-right: 10px solid #43d1bf;
+    border-bottom: 10px solid #43d1bf;
+    
+}
+.info-box {
+    white-space: pre-line;
+    border: 1px solid #d31515;
+    border-radius: 8px;
+    padding: 10px;
+    background: white;
+    min-height: 220px;
+    font-weight: bolder;
+    
+}
+.map-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 10px;
+    background: #efefef;
+}
+.logo {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    height: 50px;
+    width: auto;
+}
+#map {
+    width: 100%;
+    height: 70vh;
+    border-radius: 8px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    background: #f7f7f7;
+}
+@media (max-width: 1000px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .header h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .nav {
+        position: static;
+    }
+    .logo {
+        position: static;
+        height: 40px;
+    }
+    .main-section {
+        grid-template-columns: 1fr;
+    }
+    .left-panel,
+    .right-panel {
+        margin: 20px;
+    }
+    .map-wrapper {
+        margin: 20px;
+    }
+    #map {
+        height: 500px;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2.2rem;
+        text-shadow: 4px 4px #43d1bf;
+    }
+    .nav {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+    .nav a {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .hero {
+        padding: 20px 10px;
+    }
+    .logo {
+        height: 30px;
+    }
+    .left-panel,
+    .right-panel,
+    .map-wrapper {
+        margin: 10px;
+    }
+    #map {
+        height: 400px;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+    }
+    
+   
+}

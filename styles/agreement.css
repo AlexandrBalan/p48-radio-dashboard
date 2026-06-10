@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+.hero {
+  background: #5f86ad;
+  color: white;
+  padding: 55px 70px;
+}
+
+.tag {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  max-width: 600px;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  background: white;
+  padding: 45px 60px;
+}
+
+.intro {
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+
+.quick-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  margin-bottom: 40px;
+}
+
+.quick-info h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+section {
+  margin-bottom: 35px;
+}
+
+.blue-section {
+  background: #dceaf4;
+  padding: 30px;
+  margin-left: -60px;
+  margin-right: -60px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.roles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.role {
+  border: 1px solid #ddd;
+  padding: 18px;
+  background: #fafafa;
+}
+
+.role h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+ul {
+  padding-left: 25px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 35px 25px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .container {
+    padding: 30px 25px;
+  }
+
+  .blue-section {
+    margin-left: -25px;
+    margin-right: -25px;
+    padding: 25px;
+  }
+
+  .quick-info,
+  .roles {
+    grid-template-columns: 1fr;
+  }
+}
